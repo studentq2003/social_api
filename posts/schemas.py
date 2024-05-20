@@ -8,4 +8,5 @@ class Post(BaseModel):
     text: Annotated[str, MaxLen(5000)]
     date: str
     access: str
+    access_group: Annotated[list, None] = None
     likes: Annotated[list, None]
